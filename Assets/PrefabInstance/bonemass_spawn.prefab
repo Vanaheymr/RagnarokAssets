@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+--- !u!1 &1008541674928049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4902368297319279}
+  - component: {fileID: 114913692288569693}
+  m_Layer: 22
+  m_Name: bonemass_spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4902368297319279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008541674928049}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 500, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114913692288569693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008541674928049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -179248876, guid: c1b78fa918b030fab1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_spawnPrefab:
+  - {fileID: 1444443816929046, guid: 245ae3cecda4abc418ea2c607b4dc84b, type: 2}
+  - {fileID: 1886427631966384, guid: 64aa80ffd99b4294d8cd624e14499b21, type: 2}
+  m_alertSpawnedCreature: 1
+  m_spawnAtTarget: 1
+  m_minToSpawn: 4
+  m_maxToSpawn: 4
+  m_maxSpawned: 8
+  m_spawnRadius: 2
+  m_snapToTerrain: 1
+  m_spawnGroundOffset: 0.2
+  m_spawnDelay: 0
+  m_targetType: 3
+  m_maxTargetRange: 40
+  m_spawnEffects:
+    m_effectPrefabs:
+    - m_prefab: {fileID: 1323935215195771, guid: ba722ec12a0f0ec4294c4929d56b0d93, type: 2}
+      m_enabled: 1
+      m_variant: -1
+      m_attach: 0
+      m_inheritParentRotation: 0
+      m_inheritParentScale: 0
+      m_randomRotation: 0
+      m_scale: 0
+      m_childTransform:
+    - m_prefab: {fileID: 1465952406632203, guid: e628388587208bd4782b755939899a8a, type: 2}
+      m_enabled: 1
+      m_variant: -1
+      m_attach: 0
+      m_inheritParentRotation: 0
+      m_inheritParentScale: 0
+      m_randomRotation: 0
+      m_scale: 0
+      m_childTransform:
+  m_projectileVelocity: 10
+  m_projectileAccuracy: 10

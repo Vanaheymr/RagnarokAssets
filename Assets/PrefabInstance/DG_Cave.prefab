@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+--- !u!1 &1826439575538808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4586703964985829}
+  - component: {fileID: 114132176868753991}
+  - component: {fileID: 114300117808910517}
+  m_Layer: 0
+  m_Name: DG_Cave
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4586703964985829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826439575538808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 110, z: -30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114132176868753991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826439575538808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -187921205, guid: c1b78fa918b030fab1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_algorithm: 0
+  m_maxRooms: 64
+  m_minRooms: 3
+  m_minRequiredRooms: 3
+  m_requiredRooms:
+  - cave_shrine_shrine01
+  - cave_shrine_shrine02
+  - cave_shrine_shrine03
+  m_alternativeFunctionality: 1
+  m_themes: 4
+  m_doorTypes:
+  - m_prefab: {fileID: 1115617538524568, guid: cac642344b7ff0640be777c25d5538a9, type: 2}
+    m_connectionType: shrine
+    m_chance: 0.8
+  - m_prefab: {fileID: 1611288533989615, guid: e4d74cb94f8a14e4897fc03cadd29b92, type: 2}
+    m_connectionType:
+    m_chance: 0.2
+  - m_prefab: {fileID: 1611288533989615, guid: e4d74cb94f8a14e4897fc03cadd29b92, type: 2}
+    m_connectionType: water
+    m_chance: 0
+  - m_prefab: {fileID: 1611288533989615, guid: e4d74cb94f8a14e4897fc03cadd29b92, type: 2}
+    m_connectionType: ice
+    m_chance: 0.2
+  m_doorChance: 0.2
+  m_maxTilt: 10
+  m_tileWidth: 8
+  m_gridSize: 4
+  m_spawnChance: 1
+  m_campRadiusMin: 15
+  m_campRadiusMax: 32
+  m_minAltitude: 1
+  m_perimeterSections: 0
+  m_perimeterBuffer: 2
+  m_zoneCenter: {x: 0, y: 0, z: 0}
+  m_zoneSize: {x: 64, y: 256, z: 64}
+  m_useCustomInteriorTransform: 1
+  m_generatedSeed: 73019
+  m_generatedHash: 1668436591
+  m_originalPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &114300117808910517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826439575538808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1521249158, guid: c1b78fa918b030fab1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_persistent: 1
+  m_distant: 0
+  m_type: 2
+  m_syncInitialScale: 0

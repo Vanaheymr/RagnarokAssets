@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+--- !u!1 &1416529014324679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4077951118686300}
+  - component: {fileID: 114088514656315403}
+  m_Layer: 22
+  m_Name: spawn_roots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4077951118686300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416529014324679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 500, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114088514656315403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416529014324679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -179248876, guid: c1b78fa918b030fab1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_spawnPrefab:
+  - {fileID: 1232291527222712, guid: 144c7bf638987ab43996486fe1beb81b, type: 2}
+  m_alertSpawnedCreature: 1
+  m_spawnAtTarget: 1
+  m_minToSpawn: 15
+  m_maxToSpawn: 15
+  m_maxSpawned: 30
+  m_spawnRadius: 15
+  m_snapToTerrain: 1
+  m_spawnGroundOffset: 0.2
+  m_spawnDelay: 0.1
+  m_targetType: 0
+  m_maxTargetRange: 40
+  m_spawnEffects:
+    m_effectPrefabs:
+    - m_prefab: {fileID: 1167888850779761, guid: 38f136e8591658342b1da4d45a04cfb2, type: 2}
+      m_enabled: 1
+      m_variant: -1
+      m_attach: 0
+      m_inheritParentRotation: 0
+      m_inheritParentScale: 0
+      m_randomRotation: 0
+      m_scale: 0
+      m_childTransform:
+  m_projectileVelocity: 10
+  m_projectileAccuracy: 10

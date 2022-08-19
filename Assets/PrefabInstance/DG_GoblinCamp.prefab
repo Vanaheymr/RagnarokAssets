@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+--- !u!1 &1851904666280497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4433363316340119}
+  - component: {fileID: 114016891482983826}
+  - component: {fileID: 114497686416477290}
+  m_Layer: 0
+  m_Name: DG_GoblinCamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4433363316340119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851904666280497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114016891482983826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851904666280497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -187921205, guid: c1b78fa918b030fab1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_algorithm: 2
+  m_maxRooms: 25
+  m_minRooms: 15
+  m_minRequiredRooms: 1
+  m_requiredRooms:
+  - forestcrypt_BurialChamber01
+  - forestcrypt_BurialChamber02
+  - forestcrypt_room2
+  m_alternativeFunctionality: 0
+  m_themes: 16
+  m_doorTypes:
+  - m_prefab: {fileID: 1297437017876846, guid: ef6bcfe170ec0b34bbe7d2d24366092e, type: 2}
+    m_connectionType:
+    m_chance: 0
+  m_doorChance: 0.5
+  m_maxTilt: 25
+  m_tileWidth: 10
+  m_gridSize: 4
+  m_spawnChance: 0.5
+  m_campRadiusMin: 15
+  m_campRadiusMax: 30
+  m_minAltitude: 1
+  m_perimeterSections: 10
+  m_perimeterBuffer: 2
+  m_zoneCenter: {x: 0, y: 50, z: 0}
+  m_zoneSize: {x: 64, y: 64, z: 64}
+  m_useCustomInteriorTransform: 0
+  m_generatedSeed: 0
+  m_generatedHash: 0
+  m_originalPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &114497686416477290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851904666280497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1521249158, guid: c1b78fa918b030fab1c1f6f6164daeb2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_persistent: 1
+  m_distant: 0
+  m_type: 2
+  m_syncInitialScale: 0
